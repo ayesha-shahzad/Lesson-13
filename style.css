@@ -1,0 +1,58 @@
+html,
+body {
+    background-color: black;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* animation: bg 5s infinite alternate;  */
+    margin: 0;
+}
+
+.firstbox {
+    /* position: relative; */
+    background-color: black;
+    width: 100vw;
+    height: 32vh;
+    background-repeat: repeat-x;
+    background-image: url(star1.png);
+    background-size: 50px 50px;
+    background-position: center;
+
+}
+
+.secondbox {
+    position: relative;
+    /* background-color: green; */
+    background-image: linear-gradient(to right, black, gold, rgb(59, 51, 51));
+    width: 100vw;
+    height: 33vh;
+}
+
+.thirdbox {
+    /* position: relative; */
+    background-color: purple;
+    width: 100vw;
+    height: 35vh;
+}
+
+.star {
+    background-repeat: repeat;
+    height: 5vh;
+    /* width: fit-content; */
+}
+.starx {
+    position: absolute;
+    height: 20vh;
+    top: 6vh;
+    left: 0px;
+    animation: starx 5s linear 0s infinite alternate;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes starx {
+    0% {
+        transform: translateX(-10vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
